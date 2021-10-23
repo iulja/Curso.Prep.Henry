@@ -1,0 +1,16 @@
+Conceptos de JavaScript
+
+# Variables
+Una variable es el nombre que le damos a algo para usarlo más tarde.
+
+# Strings
+Toda porción de texto. Se pone entre comillas.
+
+# Funciones
+Es lo que "decimos" para invocar a otro objeto.
+
+# Declaraciones
+Las declaraciones "dicen" lo que hay que hacer cuando se dice determinada cosa.
+
+# Valores booleanos
+En JavaScript, como todo lo que está basado en el código binario, hay dos opciones: true o false. Estos son los valores booleanos.
