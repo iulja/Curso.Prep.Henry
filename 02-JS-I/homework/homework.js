@@ -10,13 +10,13 @@ const nuevoNum = 8;
 const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - 15 === 5;
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 400 === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 2;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -43,7 +43,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return y - x
+  return x - y;
 
 }
 
@@ -58,7 +58,7 @@ function multiplica(x, y) {
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  return y / x
+  return x / y;
   
 }
 
@@ -108,7 +108,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return y / x
+  return x % y;
   
 }
 
@@ -176,7 +176,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random
+  return Math.random();
 
 }
 
@@ -185,13 +185,14 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (num > 0){
+  if (numero > 0){
     return 'Es positivo'
   }
-  if (num < 0){
+  if (numero < 0){
     return 'Es negativo'
   }
-     return false
+  if (numero === 0) 
+    return false
   
 }
 
@@ -237,7 +238,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  return 2 / base * altura
+  return (base * altura) / 2
 }
 
 
@@ -257,12 +258,13 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if (letra.length > 1){
-    return 'Dato incorrecto'
+    return 'Dato incorrecto';
   }
-  else if (letra === 'a'||'e'||'i'||'o'||'u'){
-    return 'Es vocal'
+  else if (letra === 'a'|| letra === 'e'|| letra === 'i'|| letra === 'o'|| letra === 'u'){
+    return 'Es vocal';
   }
-  else 'Dato incorrecto';
+  else 
+    return 'Dato incorrecto';
 }
 
 
